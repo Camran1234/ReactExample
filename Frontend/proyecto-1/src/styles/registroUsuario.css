@@ -1,0 +1,578 @@
+.principal{
+    background-image: url(../assets/image/Fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover ;
+}
+
+.conteiner-registro-usuario{
+    position: absolute;
+    width: 94%;
+    height: 90%;
+    left: 3%;
+    top: 5%;
+    border-radius: 50px;
+    background: rgba(51, 106, 203, 0.73125);
+    border: 3px solid rgba(1, 1, 1, 1);
+    box-shadow: 10px 10px 10px 10px rgba(1, 1, 1, 1);
+    filter: blur(0.1px);
+}
+.logo-registro-usuario{
+    position: absolute;
+    width: 15%;
+    height: 30%;
+    left: 42%;
+    top: 0%;
+    border-radius: 50px;
+}
+.titulo-registro-usuario{
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    left: 12%;
+    top: 13%;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    font: oblique bold 120% cursive;
+}
+.formulario-registro-usuario{
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    left: 5%;
+    top: 35%;
+}
+/*formulario para el nombre de usuario*/
+.form-text-registro-usuario{
+    width: 100%;
+    max-width: 40%;
+    position: fixed;
+    left: 5%;
+    top: 35%;
+    overflow: hidden;
+
+}
+.form-text-registro-usuario input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-registro-usuario .lbl-registro-usuario{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form-text-registro-usuario .lbl-registro-usuario:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-usuario{ 
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form-text-registro-usuario input:focus + .lbl-registro-usuario .text-usuario,.form-text-registro-usuario input:valid + .lbl-registro-usuario .text-usuario{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form-text-registro-usuario input:focus + .lbl-registro-usuario:after, .form-text-registro-usuario input:valid + .lbl-registro-usuario:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-text-registro-usuario{
+    width:85%;
+}
+    }
+/***************************** formulario del apellido ***************************/
+.form-text-apellido{
+    width: 100%;
+    max-width: 40%;
+    position: fixed;
+    left: 55%;
+    top: 35%;
+    overflow: hidden;
+
+}
+.form-text-apellido input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-apellido .lbl-apellido{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form-text-apellido .lbl-apellido:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-apellido{ 
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form-text-apellido input:focus + .lbl-apellido .text-apellido,.form-text-apellido input:valid + .lbl-apellido .text-apellido{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form-text-apellido input:focus + .lbl-apellido:after, .form-text-apellido input:valid + .lbl-apellido:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-text-apellido{
+    width:85%;
+}
+    }
+
+
+/*formulario para el correo*/
+.form-text-correo-usuario{
+    width: 100%;
+    max-width: 40%;
+    position: fixed;
+    left: 5%;
+    top: 47%;
+    overflow: hidden;
+}
+.form-text-correo-usuario input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-correo-usuario .lbl-correo-usuario{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form-text-correo-usuario .lbl-correo-usuario:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-correo-usuario{ 
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form-text-correo-usuario input:focus + .lbl-correo-usuario .text-correo-usuario,.form-text-correo-usuario input:valid + .lbl-correo-usuario .text-correo-usuario{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form-text-correo-usuario input:focus + .lbl-correo-usaurio:after, .form-text-correo-usuario input:valid + .lbl-correo-usuario:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-text-correo-usuario{
+    width:85%;
+}
+    }
+/*formulario para la contraseña*/
+.form-text-contrasena-usuario{
+    width: 100%;
+    max-width: 18%;
+    position: fixed;
+    left: 55%;
+    top: 47%;
+    overflow: hidden;
+}
+.form-text-contrasena-usuario input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-contrasena-usuario .lbl-contrasena-usuario{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form-text-contrasena-usuario .lbl-contrasena-usuario:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-contrasena-usuario{ 
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form-text-contrasena-usuario input:focus + .lbl-contrasena-usuario .text-contrasena-usuario,.form-text-contrasena-usuario input:valid + .lbl-contrasena-usuario .text-contrasena-usuario{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form-text-contrasena-usuario input:focus + .lbl-contrasena-usuario:after, .form-text-contrasena-usuario input:valid + .lbl-contrasena-usuario:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-text-contrasena-usuario{
+    width:85%;
+}
+    }
+/************************************************formulario para la confirmacion de la contraseña*/
+.form-text-contrasena-usuarioR{
+    width: 100%;
+    max-width: 19%;
+    position: fixed;
+    left: 76%;
+    top: 47%;
+    overflow: hidden;
+}
+.form-text-contrasena-usuarioR input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-contrasena-usuarioR .lbl-contrasena-usuarioR{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form-text-contrasena-usuarioR .lbl-contrasena-usuarioR:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-contrasena-usuarioR{ 
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form-text-contrasena-usuarioR input:focus + .lbl-contrasena-usuarioR .text-contrasena-usuarioR,.form-text-contrasena-usuarioR input:valid + .lbl-contrasena-usuarioR .text-contrasena-usuarioR{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form-text-contrasena-usuarioR input:focus + .lbl-contrasena-usuarioR:after, .form-text-contrasena-usuarioR input:valid + .lbl-contrasena-usuarioR:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-text-contrasena-usuarioR{
+    width:85%;
+}
+    }
+
+/************************************** numero de telefono del usuario *********************************/
+.form-text-telefono-usuario{
+    width: 100%;
+    max-width: 40%;
+    position: fixed;
+    left: 5%;
+    top:  60%;
+    overflow: hidden;
+}
+.form-text-telefono-usuario input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-telefono-usuario .lbl-telefono-usuario{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form-text-telefono-usuario .lbl-telefono-usuario:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-telefono-usuario{ 
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form-text-telefono-usuario input:focus + .lbl-telefono-usuario .text-telefono-usuario,.form-text-telefono-usuario input:valid + .lbl-telefono-usuario .text-telefono-usuario{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form-text-telefono-usuario input:focus + .lbl-telefono-usuario:after, .form-text-telefono-usuario input:valid + .lbl-telefono-usuario:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-text-telefono-usuario{
+    width:85%;
+}
+    }
+
+/************************************** numero de tarjeta del usuario *********************************/
+.form-text-tarjeta-usuario{
+    width: 100%;
+    max-width: 40%;
+    position: fixed;
+    left: 55%;
+    top:  60%;
+    overflow: hidden;
+}
+.form-text-tarjeta-usuario input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-tarjeta-usuario .lbl-tarjeta-usuario{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form-text-tarjeta-usuario .lbl-tarjeta-usuario:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-tarjeta-usuario{ 
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form-text-tarjeta-usuario input:focus + .lbl-tarjeta-usuario .text-tarjeta-usuario,.form-text-tarjeta-usuario input:valid + .lbl-tarjeta-usuario .text-tarjeta-usuario{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form-text-tarjeta-usuario input:focus + .lbl-tarjeta-usuario:after, .form-text-tarjeta-usuario input:valid + .lbl-tarjeta-usuario:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-text-tarjeta-usuario{
+    width:85%;
+}
+    }
+
+    /************************************** INGRESE LA UBICACION EN FORMA DE TEXTO del usuario *********************************/
+.form-text-ubicacion-usuario{
+    width: 100%;
+    max-width: 40%;
+    position: fixed;
+    left: 55%;
+    top:  84%;
+    overflow: hidden;
+}
+.form-text-ubicacion-usuario input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-ubicacion-usuario .lbl-ubicacion-usuario{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form-text-ubicacion-usuario .lbl-ubicacion-usuario:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-ubicacion-usuario{ 
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form-text-ubicacion-usuario input:focus + .lbl-ubicacion-usuario .text-ubicacion-usuario,.form-text-ubicacion-usuario input:valid + .lbl-ubicacion-usuario .text-ubicacion-usuario{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form-text-ubicacion-usuario input:focus + .lbl-ubicacion-usuario:after, .form-text-ubicacion-usuario input:valid + .lbl-ubicacion-usuario:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-text-ubicacion-usuario{
+    width:85%;
+}
+    }
+    /****************************** comboBox de departamento *********************************/
+.form-enlaces-departamento-usuario{
+    position: absolute;
+    left: 75%;
+    transform: translateX(-50%);
+    top: 410%;
+    width: 25%;
+    height: 65%;
+}
+
+/************************************ MUNICIPIO donde se ubica la empresa ****************************/
+
+.form-enlaces-municipio-usuario{
+    position: absolute;
+    left: 100%;
+    transform: translateX(-50%);
+    top: 413%;
+    width: 23%;
+    height: 80%;
+  }
+  /***************************** Boton de enviar datos del usuario *********************************/
+.form-boton-usuario{
+    position: absolute;
+    left: 24%;
+    transform: translateX(-50%);
+    top: 460%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;   
+    outline: none;
+    border-radius: 50px;
+    color: #000000;
+    font-size: 100%;
+    font-weight: 600%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 30%; /* Establecer el ancho en 200% */
+    height: 60%; /* Establecer el alto en 200% */
+}
+
+
+.form-boton-usuario2:hover{
+    background: #2aad35;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-boton-usuario{
+    width:50%;
+}
+    }
+/************************************ Boton de cancelar registro del usuario *********************************/

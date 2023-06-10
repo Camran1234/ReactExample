@@ -1,0 +1,830 @@
+.principal{
+    background-image: url(../assets/image/Fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover ;
+}
+
+.conteiner-registro-repartidor{
+    position: absolute;
+    width: 94%;
+    height: 90%;
+    left: 3%;
+    top: 5%;
+    border-radius: 50px;
+    background: rgba(51, 106, 203, 0.73125);
+    border: 3px solid rgba(1, 1, 1, 1);
+    box-shadow: 10px 10px 10px 10px rgba(1, 1, 1, 1);
+    filter: blur(0.1px);
+}
+
+.logo-registro-repartidor{
+    position: absolute;
+    width: 15%;
+    height: 30%;
+    left: 42%;
+    top: 0%;
+    border-radius: 50px;
+}
+
+.formulario-registro-repartidor{
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    left: 5%;
+    top: 35%;
+}
+/*formulario para el nombre de repartidor*/
+.form-text-registro-repartidor{
+    width: 100%;
+    max-width: 40%;
+    position: fixed;
+    left: 5%;
+    top: 35%;
+    overflow: hidden;
+
+}
+.form-text-registro-repartidor input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-registro-repartidor .lbl-registro-repartidor{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form-text-registro-repartidor .lbl-registro-repartidor:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-repartidor{ 
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form-text-registro-repartidor input:focus + .lbl-registro-repartidor .text-repartidor,.form-text-registro-repartidor input:valid + .lbl-registro-repartidor .text-repartidor{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form-text-registro-repartidor input:focus + .lbl-registro-repartidor:after, .form-text-registro-repartidor input:valid + .lbl-registro-repartidor:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-text-registro-repartidor{
+    width:85%;
+}
+    }
+
+    /***************************** formulario del apellido ***************************/
+.form-text-apellido-repartidor{
+    width: 100%;
+    max-width: 40%;
+    position: fixed;
+    left: 55%;
+    top: 35%;
+    overflow: hidden;
+
+}
+.form-text-apellido-repartidor input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-apellido-repartidor .lbl-apellido-repartidor{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form-text-apellido-repartidor .lbl-apellido-repartidor:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-apellido-repartidor{ 
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form-text-apellido-repartidor input:focus + .lbl-apellido-repartidor .text-apellido-repartidor,.form-text-apellido-repartidor input:valid + .lbl-apellido-repartidor .text-apellido-repartidor{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form-text-apellido-repartidor input:focus + .lbl-apellido-repartidor:after, .form-text-apellido-repartidor input:valid + .lbl-apellido-repartidor:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-text-apellido-repartidor{
+    width:85%;
+}
+    }
+
+/*formulario para el correo*/
+.form-text-correo-repartidor{
+    width: 100%;
+    max-width: 40%;
+    position: fixed;
+    left: 5%;
+    top: 45%;
+    overflow: hidden;
+}
+.form-text-correo-repartidor input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-correo-repartidor .lbl-correo-repartidor{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form-text-correo-repartidor .lbl-correo-repartidor:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-correo-repartidor{ 
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form-text-correo-repartidor input:focus + .lbl-correo-repartidor .text-correo-repartidor,.form-text-correo-repartidor input:valid + .lbl-correo-repartidor .text-correo-repartidor{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form-text-correo-repartidor input:focus + .lbl-correo-usaurio:after, .form-text-correo-repartidor input:valid + .lbl-correo-repartidor:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-text-correo-repartidor{
+    width:85%;
+}
+    }
+
+/*formulario para el pdf del repartidor*/
+.form-text-pdf-repartidor{
+    width: 100%;
+    max-width: 18%;
+    position: fixed;
+    left: 55%;
+    top: 47%;
+    overflow: hidden;
+}
+.form-text-pdf-repartidor input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-pdf-repartidor .lbl-pdf-repartidor{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form-text-pdf-repartidor .lbl-pdf-repartidor:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-pdf-repartidor{ 
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form-text-pdf-repartidor input:focus + .lbl-pdf-repartidor .text-pdf-repartidor,.form-text-pdf-repartidor input:valid + .lbl-pdf-repartidor .text-pdf-repartidor{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form-text-pdf-repartidor input:focus + .lbl-pdf-repartidor:after, .form-text-pdf-repartidor input:valid + .lbl-pdf-repartidor:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-text-pdf-repartidor{
+    width:85%;
+}
+    }
+/********************************************** Combox Departamento Repartidor ***********************************************/
+.form-enlaces-departamento-repartidor{
+    position: absolute;
+    left: 75%;
+    transform: translateX(-50%);
+    top: 280%;
+    width: 25%;
+    height: 52%;
+}
+/********************************************** Combox Municipio Repartidor ***********************************************/
+.form-enlaces-municipio-repartidor{
+    position: absolute;
+    left: 102%;
+    transform: translateX(-50%);
+    top: 280%;
+    width: 26%;
+    height: 70%;
+}
+
+/********************************************** Boton Guardar Repartidor FILE***********************************************/
+.file-select {
+    position: absolute;
+    top: 170%; /* posición vertical */
+    left: 62%; /* posición horizontal */
+    width: 52.5%; /* ancho del contenedor */
+    height: 80%; /* altura del contenedor */
+    background-color: #2ecc71;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 300%;
+    cursor: pointer;
+  }
+  
+  .file-select input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .file-select:hover {
+    background-color: #27ae60;
+  }
+  
+  .file-select:hover::before {
+    content: '\261F';
+    font-size: 30px;
+  }
+  
+  .file-select::before {
+    content: 'SUBIR CV';
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  /*****************************************************CHECKBOX POSEE LICENCIA?****************************************************************/
+  .checkbox-container {
+    position: relative;
+    height: 6px;
+    width: 510px;
+    top: 80px; /* cambia el valor para moverlo a la posición deseada */
+  }
+  
+  .checkbox-label {
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .checkbox-input {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .checkbox-input:checked {
+    background-color: #2196f3;
+    border-color: #2196f3;
+  }
+  
+  .checkbox-text {
+    font-size: 16px;
+    color: #000000;
+  }
+  
+  .checkbox-arrow {
+    margin-left: 10px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 8px solid #000000;
+  }
+  /**************************************** CHECKBOX POSEE MEDIO DE TRANSPORTE *******************************************************************/
+  .checkbox-container2 {
+    position: relative;
+    height: 6px;
+    width: 510px;
+    top: 140px; /* cambia el valor para moverlo a la posición deseada */
+  }
+  
+  .checkbox-label2 {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .checkbox-input2 {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .checkbox-input2:checked {
+    background-color: #2196f3;
+    border-color: #2196f3;
+  }
+  
+  .checkbox-text2 {
+    font-size: 16px;
+    color: #000000;
+  }
+  
+  .checkbox-arrow2 {
+    margin-left: 10px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 8px solid #000000;
+  }
+
+  /***********************************************COMBO-BOX TIPO LICENCIA*******************************************************************/
+  .form-enlaces-licencia-repartidor{
+    position: absolute;
+    left: 11.5%;
+    transform: translateX(-50%);
+    top: 305%;
+    width: 22%;
+    height: 70%;
+}
+
+/*********************************************** NUMERO DE LICENCIA *******************************************************************/
+.form-text-licencia-repartidor{
+    width: 21%;
+    max-width: 40%;
+    position: fixed;
+    left: 24%;
+    top:  60%;
+    overflow: hidden;
+}
+.form-text-licencia-repartidor input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-licencia-repartidor .lbl-licencia-repartidor{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form-text-licencia-repartidor .lbl-licencia-repartidor:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-licencia-repartidor{ 
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form-text-licencia-repartidor input:focus + .lbl-licencia-repartidor .text-licencia-repartidor,.form-text-licencia-repartidor input:valid + .lbl-licencia-repartidor .text-licencia-repartidor{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form-text-licencia-repartidor input:focus + .lbl-licencia-repartidor:after, .form-text-licencia-repartidor input:valid + .lbl-licencia-repartidor:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-text-licencia-repartidor{
+    width:85%;
+}
+    }
+/************************************** numero de telefono del repartidor *********************************/
+.form-text-telefono-repartidor{
+    width: 26%;
+    max-width: 40%;
+    position: fixed;
+    left: 5%;
+    top:  77%;
+    overflow: hidden;
+}
+.form-text-telefono-repartidor input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-telefono-repartidor .lbl-telefono-repartidor{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form-text-telefono-repartidor .lbl-telefono-repartidor:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-telefono-repartidor{ 
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form-text-telefono-repartidor input:focus + .lbl-telefono-repartidor .text-telefono-repartidor,.form-text-telefono-repartidor input:valid + .lbl-telefono-repartidor .text-telefono-repartidor{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form-text-telefono-repartidor input:focus + .lbl-telefono-repartidor:after, .form-text-telefono-repartidor input:valid + .lbl-telefono-repartidor:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-text-telefono-repartidor{
+    width:85%;
+}
+    }
+/************************************** numero de NIT del repartidor *********************************/
+.form-text-nit-repartidor{
+    width: 13%;
+    max-width: 40%;
+    position: fixed;
+    left: 33%;
+    top:  77%;
+    overflow: hidden;
+}
+.form-text-nit-repartidor input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-nit-repartidor .lbl-nit-repartidor{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form-text-nit-repartidor .lbl-nit-repartidor:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-nit-repartidor{ 
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form-text-nit-repartidor input:focus + .lbl-nit-repartidor .text-nit-repartidor,.form-text-nit-repartidor input:valid + .lbl-nit-repartidor .text-nit-repartidor{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form-text-nit-repartidor input:focus + .lbl-nit-repartidor:after, .form-text-nit-repartidor input:valid + .lbl-nit-repartidor:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-text-nit-repartidor{
+    width:85%;
+}
+    }
+/********************************************* bOTON ENVIAR SOLICITUD ************************************************************************/
+.form-boton-repartidor{
+        position: absolute;
+        left: 87%;
+        transform: translateX(-50%);
+        top: 520%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;   
+        outline: none;
+        border-radius: 50px;
+        color: #000000;
+        font-size: 100%;
+        font-weight: 600%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 30%; /* Establecer el ancho en 200% */
+        height: 60%; /* Establecer el alto en 200% */
+}
+    
+    
+.form-boton-repartidor:hover{
+        background: #2aad35;
+    }
+    @media only screen and (min-width:320px) and (max-width:768px){
+     .form-boton-usuario{
+        width:50%;
+    }
+        }
+    .boton-flecha {
+        position: absolute;
+        top: 0%;
+        left: 100%;
+        width: 25%;
+        transform: translate(-50%, -370%);
+        background-color: #2aad35;
+        border: none;
+        color: #ffffff;
+        padding: 12px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+    .boton-flecha:before {
+        content: "";
+        position: absolute;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 8px solid white; /* Cambiar border-right a border-left */
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%) rotate(0deg); /* Cambiar rotate(90deg) a rotate(0deg) */
+    }
+          
+/********************************************** texArea Documentos Repartidor ***********************************************/    
+.documentos_repartidor{
+    width: 53%;
+    position: absolute;
+    top: 180%;
+    left: 88.5%;
+    transform: translateX(-50%);
+    margin-top: auto;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: auto;    
+}
+    
+    /* Para navegadores webkit */
+.documentos_repartidor::-webkit-input-placeholder {
+    color: gray;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Para Firefox */
+.documentos_repartidor:-moz-placeholder {
+    color: gray;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Para navegadores que no sean webkit ni Firefox */
+.documentos_repartidor::placeholder {
+    color: gray;
+    font-size: 16px;
+    text-align: center;
+}
+/********************************************************************************************************************************/
+/*formulario para la contraseña*/
+.form-text-contrasena-repartidor{
+    width: 100%;
+    max-width: 18%;
+    position: fixed;
+    left: 56%;
+    top: 70%;
+    overflow: hidden;
+}
+.form-text-contrasena-repartidor input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-contrasena-repartidor .lbl-contrasena-repartidor{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form-text-contrasena-repartidor .lbl-contrasena-repartidor:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-contrasena-repartidor{ 
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form-text-contrasena-repartidor input:focus + .lbl-contrasena-repartidor .text-contrasena-repartidor,.form-text-contrasena-repartidor input:valid + .lbl-contrasena-repartidor .text-contrasena-repartidor{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form-text-contrasena-repartidor input:focus + .lbl-contrasena-repartidor:after, .form-text-contrasena-repartidor input:valid + .lbl-contrasena-repartidor:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-text-contrasena-repartidor{
+    width:85%;
+}
+    }
+
+/********************************************** confirmar contraseña ***********************************************/
+/*formulario para la contraseña*/
+.form-text-contrasena2-repartidor{
+    width: 100%;
+    max-width: 18%;
+    position: fixed;
+    left: 78%;
+    top: 70%;
+    overflow: hidden;
+}
+.form-text-contrasena2-repartidor input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-contrasena2-repartidor .lbl-contrasena2-repartidor{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form-text-contrasena2-repartidor .lbl-contrasena2-repartidor:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-contrasena2-repartidor{ 
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form-text-contrasena2-repartidor input:focus + .lbl-contrasena2-repartidor .text-contrasena2-repartidor,.form-text-contrasena2-repartidor input:valid + .lbl-contrasena2-repartidor .text-contrasena2-repartidor{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form-text-contrasena2-repartidor input:focus + .lbl-contrasena2-repartidor:after, .form-text-contrasena2-repartidor input:valid + .lbl-contrasena2-repartidor:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-text-contrasena2-repartidor{
+    width:85%;
+}
+    }

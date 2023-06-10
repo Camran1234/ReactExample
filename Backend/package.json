@@ -1,0 +1,25 @@
+{
+  "name": "nodejsapi",
+  "version": "1.0.0",
+  "description": "Api para el proyecto de AYD1 del grupo 7",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose --runInBand --coverage --detectOpenHandles",
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "author": "EduardoIxen",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.2.3"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.3"
+  }
+}

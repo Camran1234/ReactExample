@@ -1,0 +1,449 @@
+body{
+    background-image: url(https://wallpaperboat.com/wp-content/uploads/2020/12/07/63465/fairy-lights-25.jpg);
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+tr{
+    color: white;
+}
+
+.product-image {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+ul.horizontal li a.active {
+    background-color: #04AA6D;
+}
+
+ul.horizontal li a.right {
+    background-color: white;
+    text-align: right;
+    color:black;
+
+}
+
+.tr.text-black {
+    color:black;
+}
+
+.th.text-black { 
+    color:black;
+}
+
+
+
+
+ul.horizontal li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.cardU {
+    opacity: 0.8;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    background-color: #4e6eaa;    
+}
+
+.cardMenu{
+    opacity: 0.9;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 1%;    
+    background-color: aliceblue;
+    
+}
+
+.cardMenu-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0px 20px;
+
+}
+
+.cardMenu-container.horizontal{
+    display: flex;
+    flex-direction: row;
+    border: #000000;
+    border-width: 2px;
+    border-style:solid;
+    height: 50%;
+    background-color: antiquewhite;
+    margin-bottom: 1%;
+    overflow-x: auto;    
+    scroll-behavior: auto;
+}
+
+.cardMenu-item{
+    margin: 25px 5px;
+    background-color: whitesmoke;
+    max-width: 20%;
+    min-width: 20%;
+    padding-top: 5%;
+    overflow-x: auto;
+}
+
+.cardMenu-item.producto{
+    position:relative;
+    display: inline-block;
+    text-align: center;
+    padding-top: 0%;
+    padding-bottom: 5%;
+}
+
+.image-div {
+    width: 100%;
+    height: 75%;
+}
+
+.cardMenu-item:hover{
+    background-color: gray;
+    color: whitesmoke;
+}
+
+.div-center {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    
+}
+
+h1.text-center.black {
+    text-align: center;
+    color: inherit;
+}
+
+h1.text-left.black {
+    text-align: left;
+    color: inherit;
+}
+
+h2.text-center.black {
+    text-align: center;
+    color: inherit;
+}
+
+h2.text-left.black {
+    text-align: left;
+    color: inherit;
+}
+
+h3.text-center.black {
+    text-align: center;
+    color: inherit;
+}
+
+h3.text-left.black {
+    text-align: left;
+    color: inherit;
+}
+
+h4.text-center.black {
+    text-align: center;
+    color: inherit;
+}
+
+h4.text-left.black {
+    text-align: left;
+    color: inherit;
+}
+
+h5.text-center.black {
+    text-align: center;
+    color: inherit;
+}
+
+h5.text-left.black {
+    text-align: left;
+    color: inherit;
+}
+
+h6.text-center.black {
+    text-align: center;
+    color: inherit;
+}
+
+h6.text-left.black {
+    text-align: left;
+    color: inherit;
+}
+
+.image-display { 
+    width: 100%;
+    align-items: center;
+}
+
+.cardDisplay {
+    
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    padding-left: 100px;
+    color:antiquewhite;
+    background-color: antiquewhite;    
+}
+
+.cardU-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.cardU-bottom.sub {
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 5px;
+    border-color: #333;
+    border-width: 2px;
+    border-style:solid;
+    height: 90%;
+    display:flex;
+    flex-direction: column;
+    overflow-y: auto;
+    
+    scroll-behavior: auto;
+    
+}
+
+.cardU-bottom.sub.item {    
+    display:flexbox;
+    overflow-y:unset;
+    
+    height:fit-content;
+    background-color: antiquewhite;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.cardU-bottom.sub.item:hover{
+    background-color: rgb(250, 199, 128);
+    
+
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+
+  .modal_content {
+    background-color: white;
+    position: absolute;
+  }
+
+  .cardModal {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #4e6eaa;    
+}
+
+    .cardModal-item{
+        background-color: #658cd3;
+        padding: 10px;
+    }
+
+    .cardModal-item-deploy{
+        display: grid;
+        grid-template-rows: 2;
+        grid-template-columns: 1;
+        background-color: #4e6eaa;
+        padding-top: 20%;
+        height: 50%;
+        width: 50%;
+    }
+
+tr:hover {
+    background-color: #7995ce;    
+}
+
+.cardU-bottom.sub.item2 {    
+    display:flexbox;
+    overflow-y:unset;
+    
+    height:fit-content;
+    background-color: rgb(111, 163, 240);
+    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.form-text-black{
+    color: black;
+}
+
+h1.text-center {
+    text-align: center;
+    font-weight: 100;
+    font-style: inherit;
+    color:rgb(111, 228, 28);
+}
+
+h2.text-center-green {
+    text-align: center;
+    font-weight: 100;
+    font-style: inherit;
+    color:rgb(111, 228, 28);
+}
+
+.center-calificacion {
+    text-align: center;
+}
+
+.Onedisplay{
+    display: grid;
+    padding-left: 15%;
+    padding-right: 15%;
+    grid-template-rows:1;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.pad-left{
+    margin-left: 25%;
+}
+
+.form-botonUD {
+    background-color: #867c7c;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 550%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;   
+    outline: none;
+    border-radius: 50px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%; /* Establecer el ancho en 200% */
+    height: 60%; /* Establecer el alto en 200% */
+}
+
+.form-botonUD:hover {
+    background-color: #dfc9c9;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 550%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;   
+    outline: none;
+    border-radius: 50px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%; /* Establecer el ancho en 200% */
+    height: 60%; /* Establecer el alto en 200% */
+}
+
+.formularioUD{
+    
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    left: 10%;
+    top: 10%;
+}
+
+h2.text-center {
+    text-align: center;
+    font-weight: 500;
+    font-style: inherit;
+    color:rgb(14, 90, 211);
+    padding: 2% 2% 2% 2%;
+    
+}
+
+h2.text-center-modal{
+    color:rgb(236, 255, 228);
+    padding: 5% 5% 5% 5%;
+}
+
+h3.text-center {
+    color:rgb(111, 228, 28);
+    text-align: center;
+    font-weight: 100;
+    font-style: inherit;
+    padding: 2% 2% 2% 2%;
+}
+
+h3.text-center-modal{
+    color:rgb(236, 255, 228);
+    padding: 5% 5% 5% 5%;
+}
+
+h4.text-center {
+    text-align: center;
+    font-weight: 100;
+    font-style: inherit;
+}
+
+h5.text-center {
+    text-align: center;
+    font-weight: 100;
+    font-style: inherit;
+}
+ul.horizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.horizontal li.horizontal {
+    float: left;
+}
+
+ul.horizontal li.horizontalInv {
+    float: right;
+  }
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+ul {
+    display: block;
+    
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}

@@ -1,0 +1,26 @@
+.encabezado-acordion-admin {
+    padding: 0% 0% 0% 0% !important;
+}
+
+.a-cv-admin {
+    color: var(--bs-link-color) !important;
+    text-decoration: underline !important;
+    display: contents !important;
+}
+
+.h1-admin {
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 3.2em;
+    background: rgb(95, 95, 143);
+}
+
+.modal-backdrop {
+    display: none;
+    z-index: 1040 !important;
+}
+
+.modal-content {
+    margin: 2px auto;
+    z-index: 1100 !important;
+}

@@ -1,0 +1,19 @@
+.div-nav-admin {
+    background-color: white;
+}
+
+.a-nav-admin {
+    font: 1.2em "Open Sans", sans-serif !important;
+    color: black !important;
+    position: initial !important;
+    width: 5% !important;
+}
+
+.menu-nav-admin {
+    margin-block-start: 0% !important;
+    padding-left: 1rem;
+}
+
+.drop-menu-admin {
+    text-align: center !important;
+}

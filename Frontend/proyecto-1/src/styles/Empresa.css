@@ -1,0 +1,242 @@
+body{
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp4289147.jpg&f=1&nofb=1&ipt=036f753986a405c30da5f483e3a672c3fda7308606d4aa474a45e61b76955293&ipo=images);
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 95%;
+    margin-left: 2.5%;    
+    margin-right: 2.5%;
+  }
+  
+.customers td, #customers th {
+    border: 5px solid rgba(221, 221, 221, 0.281);
+    padding: 5%;
+    color:black;
+}
+  
+.customers tr:nth-child(even){background-color: #f2f2f200;}
+  
+.customers tr:hover {background-color: rgba(221, 221, 221, 0.425);}
+  
+.customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: black;
+}
+
+.table-header {
+    display:flex;
+	width:100%;
+	background:#000;
+    text-align: center;
+	font-style: inherit;
+    font-size: x-large;
+    padding-right: 50%;
+    margin-right: 0.20fr;
+
+}
+
+ul.horizontal li a.active {
+    background-color: #04AA6D;
+}
+
+ul.horizontal li a.right {
+    background-color: white;
+    text-align: right;
+    color:black;
+
+}
+
+ul.horizontal li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.form-modal {
+    display: grid;
+    grid-gap: 10px;
+    background-color: inherit;    
+}
+
+    .form-modal.item{
+        padding: 10px;
+        max-width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .form-modal.item.deploy{
+        display: grid;
+        grid-template-rows: 2;
+        grid-template-columns: 1;
+        background-color: inherit;
+        padding-top: 20%;
+        height: 50%;
+        width: 50%;
+    }
+
+    .form-modal.container {
+        border-color: rgba(0, 0, 0, 0.151);
+        border-width: 1px;
+        border-style: solid;
+        max-width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .form-modal.container.horizontal{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .form-modal.container.vertical{
+        display: flex;
+        flex-direction: column;
+    }
+
+.cardE {
+    opacity: 0.8;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.cardE-table {
+    height: 100vh;
+    background-color: rgb(12, 22, 31);
+    overflow-y: auto;
+    
+    scroll-behavior: auto;
+}
+
+.cardE-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.cardE-bottom.sub {
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 5px;
+    border-color: #333;
+    border-width: 2px;
+    border-style:solid;
+    height: 90%;
+    display:flex;
+    flex-direction: column;
+    overflow-y: auto;
+    
+    scroll-behavior: auto;
+    
+}
+
+.cardE-bottom.sub.item {    
+    display:flexbox;
+    overflow-y:unset;
+    
+    height:fit-content;
+    background-color: antiquewhite;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.cardE-bottom.sub.item:hover{
+    background-color: rgb(250, 199, 128);
+    
+
+}
+
+.cardE-bottom.sub.item2 {    
+    display:flexbox;
+    overflow-y:unset;
+    
+    height:fit-content;
+    background-color: rgb(111, 163, 240);
+    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+h1 {
+    text-align: center;
+    font-weight: 100;
+    font-style: inherit;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 500;
+    font-style: inherit;
+    padding: 2% 2% 2% 2%;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 100;
+    font-style: inherit;
+    padding: 2% 2% 2% 2%;
+}
+
+h4 {
+    text-align: center;
+    font-weight: 100;
+    font-style: inherit;
+    padding: 2% 2% 2% 2%;
+}
+
+h5 {
+    text-align: center;
+    font-weight: 100;
+    font-style: inherit;
+    padding: 2% 2% 2% 2%;
+}
+ul.horizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.horizontal li.horizontal {
+    float: left;
+}
+
+ul.horizontal li.horizontalInv {
+    float: right;
+  }
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+ul {
+    display: block;
+    
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}

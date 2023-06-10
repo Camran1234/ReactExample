@@ -1,0 +1,504 @@
+.principal{
+    background-image: url(../assets/image/Fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover ;
+}
+
+.conteiner-registro-empresa{
+    position: absolute;
+    width: 94%;
+    height: 90%;
+    left: 3%;
+    top: 5%;
+    border-radius: 50px;
+    background: rgba(51, 106, 203, 0.73125);
+    border: 3px solid rgba(1, 1, 1, 1);
+    box-shadow: 10px 10px 10px 10px rgba(1, 1, 1, 1);
+    filter: blur(0.1px);
+}
+
+.logo-registro-empresa{
+    position: absolute;
+    width: 20%;
+    height: 35%;
+    left: 4%;
+    top: 24%;
+    border-radius: 50px;
+}
+.titulo-registro-empresa{
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    left: 12%;
+    top: -10%;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    font: oblique bold 120% cursive;
+}
+.formulario-registro-empresa{
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    left: 28%;
+    top: 25%;
+}
+/*formulario para el nombre de usuario*/
+.form-text-registro-empresa{
+    width: 100%;
+    max-width: 80%;
+    position: relative;
+    overflow: hidden;
+
+}
+.form-text-registro-empresa input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-registro-empresa .lbl-registro-empresa{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form-text-registro-empresa .lbl-registro-empresa:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-empresa{ 
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form-text-registro-empresa input:focus + .lbl-registro-empresa .text-empresa,.form-text-registro-empresa input:valid + .lbl-registro-empresa .text-empresa{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form-text-registro-empresa input:focus + .lbl-registro-empresa:after, .form-text-registro-empresa input:valid + .lbl-registro-empresa:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-text-registro-empresa{
+    width:85%;
+}
+    }
+/********************************* formulario para breve descripcion *********************/
+.form-text-breve-descripcion{
+    width: 100%;
+    max-width: 80%;
+    position: relative;
+    overflow: hidden;
+
+}
+.form-text-breve-descripcion input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-breve-descripcion .lbl-breve-descripcion{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form-text-breve-descripcion .lbl-breve-descripcion:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-breve-descripcion{ 
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form-text-breve-descripcion input:focus + .lbl-breve-descripcion .text-breve-descripcion,.form-text-breve-descripcion input:valid + .lbl-breve-descripcion .text-breve-descripcion{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form-text-breve-descripcion input:focus + .lbl-breve-descripcion:after, .form-text-breve-descripcion input:valid + .lbl-breve-descripcion:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-text-breve-descripcion{
+    width:85%;
+}
+    }
+/********************************* formulario para el correo electronico *********************/
+.form-text-correo{
+    width: 100%;
+    max-width: 80%;
+    position: relative;
+    overflow: hidden;
+
+}
+.form-text-correo input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-correo .lbl-correo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form-text-correo .lbl-correo:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-correo{ 
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form-text-correo input:focus + .lbl-correo .text-correo,.form-text-correo input:valid + .lbl-correo .text-correo{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form-text-correo input:focus + .lbl-correo:after, .form-text-correo input:valid + .lbl-correo:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-text-correo{
+    width:85%;
+}
+    }
+/********************************* formulario para la ubicacion *********************/
+.form-text-ubicacion{
+    width: 100%;
+    max-width: 40%;
+    position: relative;
+    overflow: hidden;
+
+}
+.form-text-ubicacion input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-ubicacion .lbl-ubicacion{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form-text-ubicacion .lbl-ubicacion:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-ubicacion{ 
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form-text-ubicacion input:focus + .lbl-ubicacion .text-ubicacion,.form-text-ubicacion input:valid + .lbl-ubicacion .text-ubicacion{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form-text-ubicacion input:focus + .lbl-ubicacion:after, .form-text-ubicacion input:valid + .lbl-ubicacion:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-text-ubicacion{
+    width:85%;
+}
+    }
+
+/********************************* formulario para el password *********************/
+.form-text-passwordEmpresa{
+    width: 100%;
+    max-width: 14%;
+    position: fixed;
+    left: 62%;
+    top: 66%;
+    overflow: hidden;
+
+}
+.form-text-passwordEmpresa input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-passwordEmpresa .lbl-passwordEmpresa{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form-text-passwordEmpresa .lbl-passwordEmpresa:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-passwordEmpresa{ 
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form-text-passwordEmpresa input:focus + .lbl-passwordEmpresa .text-passwordEmpresa,.form-text-passwordEmpresa input:valid + .lbl-passwordEmpresa .text-passwordEmpresa{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form-text-passwordEmpresa input:focus + .lbl-passwordEmpresa:after, .form-text-passwordEmpresa input:valid + .lbl-passwordEmpresa:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-text-passwordEmpresa{
+    width:85%;
+}
+    }
+/********************************* formulario para el confirmar password *********************/
+.form-text-passwordEmpresaConfirmar{
+    width: 100%;
+    max-width: 15%;
+    position: fixed;
+    left: 77%;
+    top: 66%;
+    overflow: hidden;
+
+}
+.form-text-passwordEmpresaConfirmar input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-passwordEmpresaConfirmar .lbl-passwordEmpresaConfirmar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form-text-passwordEmpresaConfirmar .lbl-passwordEmpresaConfirmar:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-passwordEmpresaConfirmar{ 
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form-text-passwordEmpresaConfirmar input:focus + .lbl-passwordEmpresaConfirmar .text-passwordEmpresaConfirmar,.form-text-passwordEmpresaConfirmar input:valid + .lbl-passwordEmpresaConfirmar .text-passwordEmpresaConfirmar{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form-text-passwordEmpresaConfirmar input:focus + .lbl-passwordEmpresaConfirmar:after, .form-text-passwordEmpresaConfirmar input:valid + .lbl-passwordEmpresaConfirmar:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-text-passwordEmpresaConfirmar{
+    width:85%;
+}
+    }
+
+
+
+/********************************** categoria que pertenece la empresa **********************/
+.form-enlaces {
+    position: absolute;
+    left: -17%;
+    transform: translateX(-50%);
+    top: 470%;
+    width: 30%;
+    height: 65%;
+  }
+  
+  #enlaces {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 50px;
+    color: #555;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 5px 20px;
+  }
+  
+  #enlaces:hover {
+    background-color: #f5f5f5;
+  }
+  
+  #enlaces:focus {
+    background-color: #fff;
+    box-shadow: 0 0 5px #2ecece;
+  }
+  /********************************** Departamento donde se ubica la empresa **********************/
+  .form-enlaces-departamento {
+    position: absolute;
+    left: 20%;
+    transform: translateX(-50%);
+    top: 600%;
+    width: 33%;
+    height: 65%;
+  }
+  
+/************************************ MUNICIPIO donde se ubica la empresa ****************************/
+
+.form-enlaces-municipio {
+    position: absolute;
+    left: 57%;
+    transform: translateX(-50%);
+    top: 600%;
+    width: 33%;
+    height: 75%;
+  }
+  
+  /******************************  boton de enviar solicitud ****************************************/
+  .form-boton-empresa {
+    position: absolute;
+    left: -17%;
+    transform: translateX(-50%);
+    top: 470%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;   
+    outline: none;
+    border-radius: 50px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 30%; /* Establecer el ancho en 200% */
+    height: 60%; /* Establecer el alto en 200% */
+}
+
+
+.form-boton-empresa:hover{
+    background: #2aad35;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form-boton-empresa{
+    width:85%;
+}
+    }
+
+    /************************************************************************************************/
+.documentos_empresa{
+    width: 30%;
+    position: absolute;
+    top: 400%;
+    right: 87%;
+    transform: translateX(-50%);
+    margin-top: auto;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: auto;
+
+}

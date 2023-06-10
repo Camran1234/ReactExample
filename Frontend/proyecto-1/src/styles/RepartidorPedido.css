@@ -1,0 +1,152 @@
+body{
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2Fc%2Fb%2Fd%2F430304.jpg&f=1&nofb=1&ipt=6a949babe3fc66840b4c0f39e557d79bd8db53f176d260d4ad758ac8965e0476&ipo=images);
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+
+ul.horizontal li a.active {
+    background-color: #04AA6D;
+}
+
+ul.horizontal li a.right {
+    background-color: white;
+    text-align: right;
+    color:black;
+
+}
+
+ul.horizontal li a.active_right {
+    background-color: #04AA6D;
+    text-align: right;
+    color:white;
+
+}
+
+
+ul.horizontal li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+.card {
+    opacity: 0.7;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.card-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.card-bottom.sub {
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 5px;
+    border-color: #333;
+    border-width: 2px;
+    border-style:solid;
+    height: 90%;
+    display:flex;
+    flex-direction: column;
+    overflow-y: auto;
+    
+    scroll-behavior: auto;
+    
+}
+
+.card-bottom.sub.item {    
+    display:flexbox;
+    overflow-y:unset;
+    
+    height:fit-content;
+    background-color: antiquewhite;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.card-bottom.sub.item:hover{
+    background-color: rgb(250, 199, 128);
+    
+
+}
+
+.card-bottom.sub.item2 {    
+    display:flexbox;
+    overflow-y:unset;
+    
+    height:fit-content;
+    background-color: rgb(111, 163, 240);
+    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+h1 {
+    text-align: center;
+    font-weight: 100;
+    font-style: inherit;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 500;
+    font-style: inherit;
+    padding: 10% 10% 10% 10%;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 100;
+    font-style: inherit;
+    padding: 10% 10% 10% 10%;
+}
+ul.horizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.horizontal li.horizontal {
+    float: left;
+}
+
+ul.horizontal li.horizontalInv {
+    float: right;
+  }
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+ul {
+    display: block;
+    
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
